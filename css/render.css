@@ -1,0 +1,41 @@
+
+li.highlight{
+	background:#f2f2f2;
+	border:1px dashed #212326;
+	height: 30px;
+	width: 100px;
+}
+.thumbnails > li {
+	float: left;
+	margin-left: -30px;
+}
+.thumbnails {
+	margin-left: -20px;
+	list-style: none;
+}
+#delete {
+	position:relative; right:5px; top:-12px;
+	background: #111;
+	border-radius: 40px;
+	width: 30px;
+	height 20px;
+	color: #FFF;
+}
+body {
+	position: relative;
+	padding-top: 30px;
+	background-color: #fff;
+	background-image: url(../img/bg.png);
+}
+label { 
+	width: 10em;
+	float: left; 
+}
+label.error { float: none;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+}
+[class*="span"] {
+	 margin-left: 60px;
+}
