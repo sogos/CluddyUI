@@ -118,6 +118,8 @@
 <br>
 
 <div class="container">
+	<blockquote class="pull-right">Follow us on <a href="https://github.com/sogos/CluddyUI">GitHub</a>
+		<br>Work based on Bootstrap by Twitter</blockquote>
 	<div class="row">
 		<a class="hide btn btn-success" id="restore">Restore</a><br><br>
 		<div class="hide alert alert-info" id="restoreInfo">

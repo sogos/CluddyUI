@@ -11,7 +11,7 @@ foreach ($layout as $element) {
 		$elements[$element_count]['class'] = $type[1];
 		switch ($type[1]) {
 			case 'span1':
-			$elements[$element_count]['content'] =  '1';
+			$elements[$element_count]['content'] =  $generator->getContent(1, 'html', false);	
 			break;
 			case 'span2':
 			$elements[$element_count]['content'] = $generator->getContent(10, 'html', false);
