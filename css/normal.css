@@ -5,14 +5,6 @@ li.highlight{
 	height: 30px;
 	width: 100px;
 }
-.thumbnails > li {
-	float: left;
-	margin-left: -30px;
-}
-.thumbnails {
-	margin-left: -20px;
-	list-style: none;
-}
 .show-grid {
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -59,6 +51,14 @@ label.error { float: none;
 	padding-left: .5em;
 	vertical-align: top;
 }
-[class*="span"] {
-	 margin-left: 30px;
+
+#sortable span {
+	margin-left: -30px;
+	border-radius: 30px;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	min-height: 30px;
+	line-height: 30px;
 }

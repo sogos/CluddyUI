@@ -3,7 +3,7 @@
 $BLOGURL = "http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss.xml";
 $NUMITEMS = 2;
 $TIMEFORMAT = "j F Y, g:ia";
-$CACHEFILE = "/tmp/" . md5($BLOGURL); $CACHETIME = 4;
+$CACHEFILE = "tmp/" . md5($BLOGURL); $CACHETIME = 4;
     # hours # download the feed iff a cached version is missing or too old
 if(!file_exists($CACHEFILE) || ((time() - filemtime($CACHEFILE)) > 3600 * $CACHETIME)) {
 	if($feed_contents = @file_get_contents($BLOGURL)) {

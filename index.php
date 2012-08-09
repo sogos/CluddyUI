@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="css/dark-hive/jquery-ui-1.8.22.custom.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/normal.css" type="text/css" id="normal"/>
 </head>
 <body>
 	<script>
 	$(document).ready( function(){
-		$('head').append('<link rel="stylesheet" href="css/normal.css" type="text/css" id="normal"/>')
 		$( "#sortable" ).sortable({
 			revert: true,
 			opacity: 0.35,
@@ -28,7 +28,7 @@
 		});     
 		$( "#sortable" ).disableSelection();
 		$( "#210x280" ).click(function() {
-			$('#sortable').append($('<li id="210x280">').append('<button id="delete" type="button" class="close">×</button>').append('<img alt="" src="http://placehold.it/210x280">').append("</li>"))
+			$('#sortable').append($('<li id="210x280">').append('<button id="delete" type="button" class="close">×</button>').append('<img  class="thumbnail" alt="" src="http://placehold.it/210x280">').append("</li>"))
 		});
 		$( "#260x280" ).click(function() {
 			$('#sortable').append($('<li id="260x280">').append('<button id="delete" type="button" class="close">×</button>').append('<img alt="" src="http://placehold.it/260x280">').append("</li>"))
@@ -71,6 +71,7 @@
 		$("#restore").click(function() {
 			$('#restore').addClass('hide');
 			$('#restoreInfo').addClass('hide');
+			$('#grid').addClass('show-grid');
 			$('#menu').show();
 			jQuery('#render').remove();
 			$('head').append('<link href="css/normal.css" rel="stylesheet" id="normal" />');
@@ -103,9 +104,8 @@
 						$('#sortable').append($('<li id="'+this.id+'">').append('<span class="'+this.class+'">'+this.content+'</span>').append("</li>"))
 
 					});
-					jQuery('#normal').remove();
-					$('head').append('<link href="css/render.css" rel="stylesheet" id="render" />');
 					$('#menu').hide();
+					$('#grid').removeClass('show-grid');
 					$('#restore').removeClass('hide');
 					$('#restoreInfo').removeClass('hide');
 					$('#myModal').modal('hide');
@@ -150,7 +150,7 @@
 		</div>
 	</div>
 
-	<div class="row show-grid">
+	<div id="grid" class="row show-grid  span12">
 		<ul id="sortable" class="thumbnails">
 
 		</ul>

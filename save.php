@@ -30,8 +30,9 @@ foreach ($layout as $element) {
 			break;
 			default:
 			if(preg_match('/\d+x\d+/', $type[1])) {
+				$elements[$element_count]['class'] = $type[1] . " plop";
 				$color = dechex(rand(0,4095));
-				$elements[$element_count]['content'] = '<img alt="" class="thumbnail" src="http://placehold.it/'. $type[1] .'/'.$color.'/fff/&text='.$color.'">';
+				$elements[$element_count]['content'] = '<img class="thumbnail" alt=""  src="http://placehold.it/'. $type[1] .'/'.$color.'/fff/&text='.$color.'">';
 			}
 			break;
 			
