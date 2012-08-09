@@ -68,7 +68,7 @@
 		}
 		str = colAdder(maxLarge,'');
 
-		$(elem).parent().parent().append('<br>').append('<div class="row">').append('<div style="background-color: '+color+'" class="'+parentClass+'">'+parentClass+'<<button style="float:right;" id="addRow" class="btn btn-primary" onclick="addRow(this);">R</button>'+str+'<button onclick="deleteSpan(this);" type="button" class="btn btn-primary" style="float:right;">×</button></div></div>');
+		$(elem).parent().parent().append('<br>').append('<div class="row">').append('<div style="background-color: '+color+'" class="'+parentClass+'">'+parentClass+'<button style="float:right;" id="addRow" class="btn btn-primary" onclick="addRow(this);">R</button>'+str+'<button onclick="deleteSpan(this);" type="button" class="btn btn-primary" style="float:right;">×</button></div></div>');
 	}
 	function addCol(elem, type) {
 		var color = randcolor();
